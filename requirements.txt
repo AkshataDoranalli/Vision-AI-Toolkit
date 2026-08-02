@@ -1,23 +1,13 @@
-# Core numerical / image processing
-numpy>=1.26,<3.0
-opencv-python>=4.10,<5.0
-matplotlib>=3.8,<4.0
-Pillow>=10.0,<11.0
+streamlit==1.46.1
 
-# Deep learning (CNN face-mask classifier)
-tensorflow>=2.15,<2.19
+numpy==1.26.4
+opencv-python-headless==4.10.0.84
+matplotlib==3.9.2
+Pillow==10.4.0
 
-# Machine learning utilities
-scikit-learn>=1.4,<2.0
+tensorflow==2.17.1
+scikit-learn==1.5.2
 
-# YOLO (object detection / segmentation / pose)
-ultralytics>=8.2,<9.0
-
-# Dataset download
-kagglehub>=0.3,<1.0
-
-# Progress bars
-tqdm>=4.66,<5.0
-
-# Web application
-streamlit>=1.35,<2.0
+ultralytics==8.3.40
+kagglehub==0.3.12
+tqdm==4.67.1
