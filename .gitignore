@@ -1,0 +1,51 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- IDE / Editors ---
+.vscode/
+.idea/
+*.swp
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Project data & outputs (kept out of version control, folders tracked via .gitkeep) ---
+data/train/*
+data/test/*
+data/validation/*
+!data/train/.gitkeep
+!data/test/.gitkeep
+!data/validation/.gitkeep
+
+outputs/*
+!outputs/.gitkeep
+
+# --- Logs ---
+*.log
+
+# --- Large downloaded/auto-fetched YOLO base weights (re-downloaded automatically) ---
+models/yolo26n.pt
+models/yolo26n-seg.pt
+models/yolo26n-pose.pt
+
+# --- Local captured media ---
+*.mp4
+captured_image.jpg
