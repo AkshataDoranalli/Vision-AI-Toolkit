@@ -62,8 +62,8 @@ Project/
 ├── models/
 │   ├── face\_mask\_model.keras   # Trained CNN mask classifier
 │   ├── weights.pt               # Custom YOLO face-mask detector
-│   ├── yolo26n.pt               # (auto-downloaded on first use)
-│   └── yolo26n-pose.pt          # (auto-downloaded on first use)
+│   ├── yolo26n.pt               
+│   └── yolo26n-pose.pt          
 │
 ├── data/
 │   ├── train/
@@ -88,7 +88,7 @@ Project/
 ```bash
 # 1. Clone the repository
 git clone <your-repo-url>
-cd Project
+cd Vision-AI-Toolkit
 
 # 2. Create a virtual environment (recommended)
 python -m venv venv
@@ -111,8 +111,7 @@ pip install -r requirements.txt
 The CNN classifier is trained on the Kaggle
 [`omkargurav/face-mask-dataset`](https://www.kaggle.com/datasets/omkargurav/face-mask-dataset).
 
-`train.py` downloads it automatically via `kagglehub` the first time it runs —
-you only need a Kaggle account and an API token configured
+`train.py` downloads it automatically via `kagglehub` 
 (`\~/.kaggle/kaggle.json` or the `KAGGLE\_USERNAME` / `KAGGLE\_KEY` environment
 variables).
 
@@ -185,23 +184,14 @@ upload an image (or take a camera snapshot), and click **Run detection**.
 
 \---
 
-## 🖼️ Screenshots
 
-> \_Add screenshots of the Streamlit app and sample detections here.\_
-
-|Face Mask Detection (CNN)|YOLO Object Detection|
-|-|-|
-|*placeholder*|*placeholder*|
-
-\---
 
 ## 📊 Results
 
 |Model|Task|Metric|
 |-|-|-|
-|CNN (`face\_mask\_model.keras`)|Mask / No-Mask classification|Test accuracy: *fill in after running `train.py`*|
-|YOLO (`weights.pt`)|Face-mask detection|mAP: *fill in from your training run*|
-
+|CNN (`face\_mask\_model.keras`)|Mask / No-Mask classification|Test accuracy: 
+|YOLO (`weights.pt`)|Face-mask detection|mAP: 
 Re-run `train.py` to regenerate up-to-date metrics and the plot in
 `outputs/training\_history.png`.
 
